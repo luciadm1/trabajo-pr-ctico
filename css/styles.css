@@ -1,0 +1,124 @@
+body,div {
+    box-sizing:border-box;
+}
+nav,header,footer,aside,main {
+    padding: 20px;
+    border: 2px solid rgb(11,52,80)
+}
+.grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto 1fr auto;
+    margin: auto;
+    grid-auto-flow: dense;
+    gap: 10px;
+    padding: 10px;
+    min-height: 100vh;
+    grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer footer"
+
+}
+header{
+    background-color: rgb(99, 99, 165);
+    padding-left: 40%;
+    grid-area: header;
+    align-items: center;
+    font-size: 30px; color: rgb(247, 247, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 6px;
+
+}
+
+footer {
+    font-family:  sans-serif;
+    grid-area: footer;
+    border-radius: 6px;
+}
+nav {
+    grid-area: nav;
+    min-width:auto;
+    border-radius: 6px;
+    background-color:rgba(100, 84, 243, 0.993);
+}
+main {
+    font-family: sans-serif;
+    font-size: 13px;
+    border-radius: 6px;
+    grid-area: main;
+    min-width: 40%;
+}
+h2{
+    flex: 1;
+}
+p{
+    flex: 1;
+}
+aside{
+    font-family: sans-serif;
+    border-radius: 6px;
+    grid-area: aside;
+    min-width: 40%;
+    display: flex;
+    background-color:rgba(100, 84, 243, 0.993);
+}
+.imagenaside{
+    display: flex;
+}
+.grid {
+    max-width: 1200px;
+    min-width: 400px;
+    background-color: rgba(80, 129, 235, 0.753);
+}
+.lista {
+    flex:1;
+    padding: 10px;
+    align-items: center;
+    background-color: rgba(115, 115, 201, 0.767)
+}
+li{
+    border-top-right-radius: 3px;
+    font-family:sans-serif;
+    font-size: 16px;
+    list-style: none
+    
+}
+.inicio {
+    margin-inline: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(213, 213, 214);
+    border-radius: 6px; 
+    color:black
+}
+.inicio:hover {background-color: rgb(231,163,14);}
+.nosotros{
+    margin-inline: 9px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    padding: 8px;
+    padding-bottom: 10px;
+    background-color: rgb(231, 163, 14);
+    align-items: center;
+}
+
+.crear-cuenta{
+    margin-right: 18px;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: rgb(231, 163, 14);
+}
+.nosotros:hover, .crear-cuenta:hover{
+    background-color: rgb(213, 213, 214);
+}
+.footer{
+    align-items: center;
+    padding-left: 40%;
+}
